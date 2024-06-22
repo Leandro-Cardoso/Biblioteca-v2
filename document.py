@@ -1,4 +1,4 @@
-class Book():
+class Document():
     def __init__(self, title: str, author: str, date: str, theme: str, historical_context: str, description: str, location: str) -> None:
         self.title = title
         self.author = author
