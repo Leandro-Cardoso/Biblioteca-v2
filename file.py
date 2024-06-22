@@ -54,7 +54,18 @@ class File():
             self.key_values = sorteds
     def add(self, content: dict) -> None:
         '''Adiciona um novo elemento no arquivo.'''
-        pass
+        # Buscar indice aproximado:
+        i = binary_search(self.key_values, content[self.sort_key], True)
+        # Inserir elemento novo no meio das listas:
+        if content[self.sort_key] != self.key_values[i]:
+            if i == len(self.key_values) - 1:
+                self.key_values.append(content[self.sort_key])
+                self.content.append(content)
+            else:
+                self.key_values.insert(i, content[self.sort_key])
+                self.content.insert(i, content)
+        else:
+            self.content[i] = content
     def remove(self, content: dict) -> None:
         '''Remove um elemento do arquivo.'''
         pass
@@ -65,7 +76,7 @@ class File():
 if __name__ == '__main__':
     file = File('admins', 'users')
     new_admin = {
-        'username' : 'kely',
+        'username' : 'aba',
         'password' : 'asmin'
     }
     file.add(new_admin)

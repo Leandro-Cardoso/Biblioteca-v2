@@ -4,7 +4,6 @@ def binary_search(arr:list, key:str, approximate: bool = False) -> int:
     e = len(arr) - 1
     while s <= e:
         m = (s + e) // 2
-        print(m)
         if arr[m] == key:
             return m
         elif arr[m] < key:
