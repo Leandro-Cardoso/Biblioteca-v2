@@ -2,5 +2,25 @@
     {
         "username" : "admin",
         "password" : "admin"
+    },
+    {
+        "username" : "xuxa",
+        "password" : "admin"
+    },
+    {
+        "username" : "luna",
+        "password" : "admin"
+    },
+    {
+        "username" : "adilson",
+        "password" : "admin"
+    },
+    {
+        "username" : "leandro",
+        "password" : "admin"
+    },
+    {
+        "username" : "joao",
+        "password" : "admin"
     }
 ]
