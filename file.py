@@ -45,7 +45,6 @@ class File():
         '''Pega uma lista dos valores da chave principal.'''
         values = []
         for dictionary in self.content:
-            print(dictionary, self.sort_key)
             values.append(dictionary[self.sort_key])
         return values
     def sort(self) -> None:
